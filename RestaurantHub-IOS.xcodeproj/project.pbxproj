@@ -24,7 +24,39 @@
 		600DB2482C5C5D10004DB339 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2472C5C5D10004DB339 /* FirebaseFirestore */; };
 		600DB24A2C5C5D17004DB339 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2492C5C5D17004DB339 /* FirebaseStorage */; };
 		600DB24C2C5C5F57004DB339 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */; };
+		600DB2542C5C6D82004DB339 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600DB2532C5C6D82004DB339 /* WidgetKit.framework */; };
+		600DB2562C5C6D82004DB339 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600DB2552C5C6D82004DB339 /* SwiftUI.framework */; };
+		600DB2592C5C6D82004DB339 /* RestaurantHubWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB2582C5C6D82004DB339 /* RestaurantHubWidgetBundle.swift */; };
+		600DB25B2C5C6D82004DB339 /* RestaurantHubWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB25A2C5C6D82004DB339 /* RestaurantHubWidgetLiveActivity.swift */; };
+		600DB25D2C5C6D82004DB339 /* RestaurantHubWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB25C2C5C6D82004DB339 /* RestaurantHubWidget.swift */; };
+		600DB25F2C5C6D82004DB339 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB25E2C5C6D82004DB339 /* AppIntent.swift */; };
+		600DB2612C5C6D83004DB339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600DB2602C5C6D83004DB339 /* Assets.xcassets */; };
+		600DB2652C5C6D83004DB339 /* RestaurantHubWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 600DB2522C5C6D82004DB339 /* RestaurantHubWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		600DB2632C5C6D83004DB339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 021274C62C3C83C50066EAA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 600DB2512C5C6D82004DB339;
+			remoteInfo = RestaurantHubWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		600DB2692C5C6D83004DB339 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				600DB2652C5C6D83004DB339 /* RestaurantHubWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		021274CE2C3C83C50066EAA1 /* RestaurantHub-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RestaurantHub-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +68,15 @@
 		021274E52C3CD6E30066EAA1 /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
 		600DB2352C5C5C23004DB339 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		600DB2522C5C6D82004DB339 /* RestaurantHubWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RestaurantHubWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		600DB2532C5C6D82004DB339 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		600DB2552C5C6D82004DB339 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		600DB2582C5C6D82004DB339 /* RestaurantHubWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantHubWidgetBundle.swift; sourceTree = "<group>"; };
+		600DB25A2C5C6D82004DB339 /* RestaurantHubWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantHubWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		600DB25C2C5C6D82004DB339 /* RestaurantHubWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantHubWidget.swift; sourceTree = "<group>"; };
+		600DB25E2C5C6D82004DB339 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		600DB2602C5C6D83004DB339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		600DB2622C5C6D83004DB339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +96,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		600DB24F2C5C6D82004DB339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600DB2562C5C6D82004DB339 /* SwiftUI.framework in Frameworks */,
+				600DB2542C5C6D82004DB339 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				021274D02C3C83C50066EAA1 /* RestaurantHub-IOS */,
+				600DB2572C5C6D82004DB339 /* RestaurantHubWidget */,
 				021274CF2C3C83C50066EAA1 /* Products */,
 				600DB2422C5C5D10004DB339 /* Frameworks */,
 			);
@@ -71,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				021274CE2C3C83C50066EAA1 /* RestaurantHub-IOS.app */,
+				600DB2522C5C6D82004DB339 /* RestaurantHubWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +153,23 @@
 		600DB2422C5C5D10004DB339 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				600DB2532C5C6D82004DB339 /* WidgetKit.framework */,
+				600DB2552C5C6D82004DB339 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		600DB2572C5C6D82004DB339 /* RestaurantHubWidget */ = {
+			isa = PBXGroup;
+			children = (
+				600DB2582C5C6D82004DB339 /* RestaurantHubWidgetBundle.swift */,
+				600DB25A2C5C6D82004DB339 /* RestaurantHubWidgetLiveActivity.swift */,
+				600DB25C2C5C6D82004DB339 /* RestaurantHubWidget.swift */,
+				600DB25E2C5C6D82004DB339 /* AppIntent.swift */,
+				600DB2602C5C6D83004DB339 /* Assets.xcassets */,
+				600DB2622C5C6D83004DB339 /* Info.plist */,
+			);
+			path = RestaurantHubWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,10 +182,12 @@
 				021274CA2C3C83C50066EAA1 /* Sources */,
 				021274CB2C3C83C50066EAA1 /* Frameworks */,
 				021274CC2C3C83C50066EAA1 /* Resources */,
+				600DB2692C5C6D83004DB339 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				600DB2642C5C6D83004DB339 /* PBXTargetDependency */,
 			);
 			name = "RestaurantHub-IOS";
 			packageProductDependencies = (
@@ -136,6 +205,23 @@
 			productReference = 021274CE2C3C83C50066EAA1 /* RestaurantHub-IOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		600DB2512C5C6D82004DB339 /* RestaurantHubWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600DB2662C5C6D83004DB339 /* Build configuration list for PBXNativeTarget "RestaurantHubWidgetExtension" */;
+			buildPhases = (
+				600DB24E2C5C6D82004DB339 /* Sources */,
+				600DB24F2C5C6D82004DB339 /* Frameworks */,
+				600DB2502C5C6D82004DB339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestaurantHubWidgetExtension;
+			productName = RestaurantHubWidgetExtension;
+			productReference = 600DB2522C5C6D82004DB339 /* RestaurantHubWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,6 +233,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					021274CD2C3C83C50066EAA1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					600DB2512C5C6D82004DB339 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -168,6 +257,7 @@
 			projectRoot = "";
 			targets = (
 				021274CD2C3C83C50066EAA1 /* RestaurantHub-IOS */,
+				600DB2512C5C6D82004DB339 /* RestaurantHubWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +270,14 @@
 				021274D92C3C83C70066EAA1 /* Preview Assets.xcassets in Resources */,
 				021274D62C3C83C70066EAA1 /* Assets.xcassets in Resources */,
 				600DB2362C5C5C23004DB339 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600DB2502C5C6D82004DB339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600DB2612C5C6D83004DB339 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +296,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		600DB24E2C5C6D82004DB339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600DB2592C5C6D82004DB339 /* RestaurantHubWidgetBundle.swift in Sources */,
+				600DB25F2C5C6D82004DB339 /* AppIntent.swift in Sources */,
+				600DB25D2C5C6D82004DB339 /* RestaurantHubWidget.swift in Sources */,
+				600DB25B2C5C6D82004DB339 /* RestaurantHubWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		600DB2642C5C6D83004DB339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 600DB2512C5C6D82004DB339 /* RestaurantHubWidgetExtension */;
+			targetProxy = 600DB2632C5C6D83004DB339 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		021274DA2C3C83C70066EAA1 /* Debug */ = {
@@ -323,6 +440,7 @@
 		021274DD2C3C83C70066EAA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -351,6 +469,7 @@
 		021274DE2C3C83C70066EAA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +495,58 @@
 			};
 			name = Release;
 		};
+		600DB2672C5C6D83004DB339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestaurantHubWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestaurantHubWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steve.malistella.RestaurantHub-IOS.RestaurantHubWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		600DB2682C5C6D83004DB339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestaurantHubWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestaurantHubWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steve.malistella.RestaurantHub-IOS.RestaurantHubWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,6 +564,15 @@
 			buildConfigurations = (
 				021274DD2C3C83C70066EAA1 /* Debug */,
 				021274DE2C3C83C70066EAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600DB2662C5C6D83004DB339 /* Build configuration list for PBXNativeTarget "RestaurantHubWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600DB2672C5C6D83004DB339 /* Debug */,
+				600DB2682C5C6D83004DB339 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
