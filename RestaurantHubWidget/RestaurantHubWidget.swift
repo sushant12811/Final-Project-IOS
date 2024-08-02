@@ -24,7 +24,7 @@ struct Provider: AppIntentTimelineProvider {
 
         // Generate a timeline consisting of entries that loop through the images array indefinitely.
         let currentDate = Date()
-        var currentDateOffset = currentDate
+        _ = currentDate
 
         // Adjust the number of repetitions to fit your needs
         let repetitions = 100

@@ -19,7 +19,7 @@ class RestaurantViewModel: ObservableObject {
             let data = snapshot.documents.compactMap { document in
                 try? document.data(as: RestaurantData.self)
             }
-            print(data)
+            
             DispatchQueue.main.async {
                 self.restaurantData = data
             }

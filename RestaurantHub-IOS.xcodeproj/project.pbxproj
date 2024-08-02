@@ -32,6 +32,7 @@
 		600DB25F2C5C6D82004DB339 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB25E2C5C6D82004DB339 /* AppIntent.swift */; };
 		600DB2612C5C6D83004DB339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600DB2602C5C6D83004DB339 /* Assets.xcassets */; };
 		600DB2652C5C6D83004DB339 /* RestaurantHubWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 600DB2522C5C6D82004DB339 /* RestaurantHubWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		600DB26B2C5C7BF1004DB339 /* NotificationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB26A2C5C7BF1004DB339 /* NotificationGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		600DB25E2C5C6D82004DB339 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		600DB2602C5C6D83004DB339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		600DB2622C5C6D83004DB339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		600DB26A2C5C7BF1004DB339 /* NotificationGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				021274E32C3CB75D0066EAA1 /* RestaurantDetailsView.swift */,
 				021274E52C3CD6E30066EAA1 /* RestaurantData.swift */,
 				600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */,
+				600DB26A2C5C7BF1004DB339 /* NotificationGenerator.swift */,
 			);
 			path = "RestaurantHub-IOS";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600DB26B2C5C7BF1004DB339 /* NotificationGenerator.swift in Sources */,
 				021274E42C3CB75D0066EAA1 /* RestaurantDetailsView.swift in Sources */,
 				021274D42C3C83C50066EAA1 /* RestaurantListView.swift in Sources */,
 				021274E62C3CD6E30066EAA1 /* RestaurantData.swift in Sources */,

@@ -32,6 +32,9 @@ struct RestaurantListView: View {
                 .navigationTitle("Restaurants")
                 .navigationBarTitleDisplayMode(.inline)
                 .onAppear {
+                    Task {
+                                            await NotificationGenerator.generateNotification(title: "Today's Best Restaurants", description: "Check out the best restaurants of the day!")
+                                        }
                     // Ensure search bar is visible on appear
                     DispatchQueue.main.async {
                         UIScrollView.appearance().keyboardDismissMode = .onDrag
