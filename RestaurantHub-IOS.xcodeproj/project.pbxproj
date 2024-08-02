@@ -13,6 +13,17 @@
 		021274D92C3C83C70066EAA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021274D82C3C83C70066EAA1 /* Preview Assets.xcassets */; };
 		021274E42C3CB75D0066EAA1 /* RestaurantDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021274E32C3CB75D0066EAA1 /* RestaurantDetailsView.swift */; };
 		021274E62C3CD6E30066EAA1 /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021274E52C3CD6E30066EAA1 /* RestaurantData.swift */; };
+		600DB2362C5C5C23004DB339 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 600DB2352C5C5C23004DB339 /* GoogleService-Info.plist */; };
+		600DB2392C5C5CCB004DB339 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2382C5C5CCB004DB339 /* FirebaseAnalytics */; };
+		600DB23B2C5C5CCB004DB339 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB23A2C5C5CCB004DB339 /* FirebaseAnalyticsOnDeviceConversion */; };
+		600DB23D2C5C5CCB004DB339 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB23C2C5C5CCB004DB339 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		600DB23F2C5C5CCB004DB339 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB23E2C5C5CCB004DB339 /* FirebaseAppCheck */; };
+		600DB2412C5C5CCB004DB339 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2402C5C5CCB004DB339 /* FirebaseAppDistribution-Beta */; };
+		600DB2442C5C5D10004DB339 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2432C5C5D10004DB339 /* FirebaseDatabase */; };
+		600DB2462C5C5D10004DB339 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2452C5C5D10004DB339 /* FirebaseDynamicLinks */; };
+		600DB2482C5C5D10004DB339 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2472C5C5D10004DB339 /* FirebaseFirestore */; };
+		600DB24A2C5C5D17004DB339 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2492C5C5D17004DB339 /* FirebaseStorage */; };
+		600DB24C2C5C5F57004DB339 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +34,8 @@
 		021274D82C3C83C70066EAA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		021274E32C3CB75D0066EAA1 /* RestaurantDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsView.swift; sourceTree = "<group>"; };
 		021274E52C3CD6E30066EAA1 /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
+		600DB2352C5C5C23004DB339 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +43,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600DB2442C5C5D10004DB339 /* FirebaseDatabase in Frameworks */,
+				600DB23F2C5C5CCB004DB339 /* FirebaseAppCheck in Frameworks */,
+				600DB24A2C5C5D17004DB339 /* FirebaseStorage in Frameworks */,
+				600DB2392C5C5CCB004DB339 /* FirebaseAnalytics in Frameworks */,
+				600DB2412C5C5CCB004DB339 /* FirebaseAppDistribution-Beta in Frameworks */,
+				600DB23D2C5C5CCB004DB339 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				600DB2482C5C5D10004DB339 /* FirebaseFirestore in Frameworks */,
+				600DB2462C5C5D10004DB339 /* FirebaseDynamicLinks in Frameworks */,
+				600DB23B2C5C5CCB004DB339 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +63,7 @@
 			children = (
 				021274D02C3C83C50066EAA1 /* RestaurantHub-IOS */,
 				021274CF2C3C83C50066EAA1 /* Products */,
+				600DB2422C5C5D10004DB339 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,12 +78,14 @@
 		021274D02C3C83C50066EAA1 /* RestaurantHub-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				600DB2352C5C5C23004DB339 /* GoogleService-Info.plist */,
 				021274D12C3C83C50066EAA1 /* RestaurantHub_IOSApp.swift */,
 				021274D32C3C83C50066EAA1 /* RestaurantListView.swift */,
 				021274D52C3C83C70066EAA1 /* Assets.xcassets */,
 				021274D72C3C83C70066EAA1 /* Preview Content */,
 				021274E32C3CB75D0066EAA1 /* RestaurantDetailsView.swift */,
 				021274E52C3CD6E30066EAA1 /* RestaurantData.swift */,
+				600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */,
 			);
 			path = "RestaurantHub-IOS";
 			sourceTree = "<group>";
@@ -71,6 +96,13 @@
 				021274D82C3C83C70066EAA1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		600DB2422C5C5D10004DB339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +121,17 @@
 			dependencies = (
 			);
 			name = "RestaurantHub-IOS";
+			packageProductDependencies = (
+				600DB2382C5C5CCB004DB339 /* FirebaseAnalytics */,
+				600DB23A2C5C5CCB004DB339 /* FirebaseAnalyticsOnDeviceConversion */,
+				600DB23C2C5C5CCB004DB339 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				600DB23E2C5C5CCB004DB339 /* FirebaseAppCheck */,
+				600DB2402C5C5CCB004DB339 /* FirebaseAppDistribution-Beta */,
+				600DB2432C5C5D10004DB339 /* FirebaseDatabase */,
+				600DB2452C5C5D10004DB339 /* FirebaseDynamicLinks */,
+				600DB2472C5C5D10004DB339 /* FirebaseFirestore */,
+				600DB2492C5C5D17004DB339 /* FirebaseStorage */,
+			);
 			productName = "RestaurantHub-IOS";
 			productReference = 021274CE2C3C83C50066EAA1 /* RestaurantHub-IOS.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 021274C52C3C83C50066EAA1;
+			packageReferences = (
+				600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 021274CF2C3C83C50066EAA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +179,7 @@
 			files = (
 				021274D92C3C83C70066EAA1 /* Preview Assets.xcassets in Resources */,
 				021274D62C3C83C70066EAA1 /* Assets.xcassets in Resources */,
+				600DB2362C5C5C23004DB339 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +193,7 @@
 				021274E42C3CB75D0066EAA1 /* RestaurantDetailsView.swift in Sources */,
 				021274D42C3C83C50066EAA1 /* RestaurantListView.swift in Sources */,
 				021274E62C3CD6E30066EAA1 /* RestaurantData.swift in Sources */,
+				600DB24C2C5C5F57004DB339 /* RestaurantViewModel.swift in Sources */,
 				021274D22C3C83C50066EAA1 /* RestaurantHub_IOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +398,65 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		600DB2382C5C5CCB004DB339 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		600DB23A2C5C5CCB004DB339 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		600DB23C2C5C5CCB004DB339 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		600DB23E2C5C5CCB004DB339 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		600DB2402C5C5CCB004DB339 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		600DB2432C5C5D10004DB339 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		600DB2452C5C5D10004DB339 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		600DB2472C5C5D10004DB339 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		600DB2492C5C5D17004DB339 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 021274C62C3C83C50066EAA1 /* Project object */;
 }
