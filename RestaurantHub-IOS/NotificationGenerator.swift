@@ -10,6 +10,8 @@ class NotificationGenerator {
         content.title = title
         content.body = description
         content.sound = .default
+        // Add the custom icon
+        content.launchImageName = "img"
         
         // Set up the trigger to repeat every hour
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false) // Short interval for testing
