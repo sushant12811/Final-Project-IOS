@@ -3,6 +3,13 @@ import SwiftUI
 struct RestaurantListView: View {
     @StateObject private var viewModel = RestaurantViewModel()
     @State private var searchText = ""
+    @State private var hasGeneratedNotification = false
+
+    init() {
+        UISearchBar.appearance().barTintColor = UIColor.white
+        UISearchBar.appearance().backgroundColor = UIColor.white
+        UISearchBar.appearance().searchTextField.backgroundColor = UIColor.white
+    }
 
     var body: some View {
         NavigationStack {
@@ -32,12 +39,24 @@ struct RestaurantListView: View {
                 .navigationTitle("Restaurants")
                 .navigationBarTitleDisplayMode(.inline)
                 .onAppear {
-                    Task {
-                                            await NotificationGenerator.generateNotification(title: "Today's Best Restaurants", description: "Check out the best restaurants of the day!")
-                                        }
-                    // Ensure search bar is visible on appear
+                    if !hasGeneratedNotification {
+                        Task {
+                            await NotificationGenerator.generateNotification(title: "Today's Best Restaurants", description: "Check out the best restaurants of the day!")
+                        }
+                        hasGeneratedNotification = true
+                    }
                     DispatchQueue.main.async {
                         UIScrollView.appearance().keyboardDismissMode = .onDrag
+                    }
+                }
+            }
+            .toolbarBackground(Color.darkGreen, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: RestaurantFavouriteListing(viewModel: RestaurantViewModel())) {
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(.gray)
                     }
                 }
             }

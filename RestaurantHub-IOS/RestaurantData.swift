@@ -1,5 +1,7 @@
 import Foundation
 
+
+//Structure of data with data types
 struct RestaurantData: Identifiable, Codable {
     var id: UUID = UUID()
     var restaurantNames: String

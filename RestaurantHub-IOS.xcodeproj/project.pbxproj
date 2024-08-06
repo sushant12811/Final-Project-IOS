@@ -13,6 +13,8 @@
 		021274D92C3C83C70066EAA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021274D82C3C83C70066EAA1 /* Preview Assets.xcassets */; };
 		021274E42C3CB75D0066EAA1 /* RestaurantDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021274E32C3CB75D0066EAA1 /* RestaurantDetailsView.swift */; };
 		021274E62C3CD6E30066EAA1 /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021274E52C3CD6E30066EAA1 /* RestaurantData.swift */; };
+		024747452C61A79400103D53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 024747442C61A79400103D53 /* FirebaseAuth */; };
+		024747472C61AE1F00103D53 /* RestaurantFavouriteListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024747462C61AE1F00103D53 /* RestaurantFavouriteListing.swift */; };
 		600DB2362C5C5C23004DB339 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 600DB2352C5C5C23004DB339 /* GoogleService-Info.plist */; };
 		600DB2392C5C5CCB004DB339 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB2382C5C5CCB004DB339 /* FirebaseAnalytics */; };
 		600DB23B2C5C5CCB004DB339 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 600DB23A2C5C5CCB004DB339 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -67,6 +69,7 @@
 		021274D82C3C83C70066EAA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		021274E32C3CB75D0066EAA1 /* RestaurantDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsView.swift; sourceTree = "<group>"; };
 		021274E52C3CD6E30066EAA1 /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
+		024747462C61AE1F00103D53 /* RestaurantFavouriteListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantFavouriteListing.swift; sourceTree = "<group>"; };
 		600DB2352C5C5C23004DB339 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 		600DB2522C5C6D82004DB339 /* RestaurantHubWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RestaurantHubWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				600DB2442C5C5D10004DB339 /* FirebaseDatabase in Frameworks */,
+				024747452C61A79400103D53 /* FirebaseAuth in Frameworks */,
 				600DB23F2C5C5CCB004DB339 /* FirebaseAppCheck in Frameworks */,
 				600DB24A2C5C5D17004DB339 /* FirebaseStorage in Frameworks */,
 				600DB2392C5C5CCB004DB339 /* FirebaseAnalytics in Frameworks */,
@@ -141,6 +145,7 @@
 				021274E52C3CD6E30066EAA1 /* RestaurantData.swift */,
 				600DB24B2C5C5F57004DB339 /* RestaurantViewModel.swift */,
 				600DB26A2C5C7BF1004DB339 /* NotificationGenerator.swift */,
+				024747462C61AE1F00103D53 /* RestaurantFavouriteListing.swift */,
 			);
 			path = "RestaurantHub-IOS";
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				600DB2452C5C5D10004DB339 /* FirebaseDynamicLinks */,
 				600DB2472C5C5D10004DB339 /* FirebaseFirestore */,
 				600DB2492C5C5D17004DB339 /* FirebaseStorage */,
+				024747442C61A79400103D53 /* FirebaseAuth */,
 			);
 			productName = "RestaurantHub-IOS";
 			productReference = 021274CE2C3C83C50066EAA1 /* RestaurantHub-IOS.app */;
@@ -294,6 +300,7 @@
 				600DB26B2C5C7BF1004DB339 /* NotificationGenerator.swift in Sources */,
 				021274E42C3CB75D0066EAA1 /* RestaurantDetailsView.swift in Sources */,
 				021274D42C3C83C50066EAA1 /* RestaurantListView.swift in Sources */,
+				024747472C61AE1F00103D53 /* RestaurantFavouriteListing.swift in Sources */,
 				021274E62C3CD6E30066EAA1 /* RestaurantData.swift in Sources */,
 				600DB24C2C5C5F57004DB339 /* RestaurantViewModel.swift in Sources */,
 				021274D22C3C83C50066EAA1 /* RestaurantHub_IOSApp.swift in Sources */,
@@ -455,6 +462,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,6 +492,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -595,6 +604,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		024747442C61A79400103D53 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAuth;
+		};
 		600DB2382C5C5CCB004DB339 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 600DB2372C5C5CCB004DB339 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
